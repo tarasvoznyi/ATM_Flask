@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main page
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<h1>This is a main page of ATM</h1>
+<p>This server was produced by student of Lviv Polytechnic University</p>
+<p>Group KI-38 , Taras Voznyi</p>
+<p>Variant №5</p>
+<p>Topic: System of filling and receiving cash at ATMs.</p>
+{% endblock %}

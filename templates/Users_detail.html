@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{users.username}}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>{{users.username}}</h1>
+    <div class="alert alert-info">
+       <p>First name: {{ users.first_name }}</p>
+        <p>Last name: {{ users.last_name }}</p>
+        <p>Number: {{ users.number }}</p>
+        <p>Password: {{ users.password }}</p>
+        <p>Email: {{ users.email }}</p>
+        <p>Pin: {{ users.pin }}</p>
+
+        <p><b>Date: {{ users.date }}</b></p>
+        <a href="/Users/{{ users.id }}/delete" class="btn btn-danger">Delete user</a>
+
+    </div>
+</div>
+
+{% endblock %}

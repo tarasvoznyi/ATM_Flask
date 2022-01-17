@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+All active users
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Here is all our active users</h1>
+    {% for el in users %}
+    <div class="alert alert-info">
+       <h1>{{ el.id }}</h1>
+        <p>{{ el.username }}</p>
+        <p><b>{{ el.date }}</b></p>
+        <a href="/Users/{{ el.id }}" class="btn btn-primary">More info</a>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

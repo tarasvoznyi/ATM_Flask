@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Page about us
+{% endblock %}
+
+{% block body %}
+<h1>This is a page about our ATM</h1>
+<p>This is ATM was founded in 2021</p>
+<p>There are a lot of ATM's around Ukraine</p>
+<p>Number of ATM in our company has the clearest reputation</p>
+<p>Feel free to use our ATM's</p>
+<p>Have a nice day!!</p>
+<img src="{{ url_for('static', filename='pictures/about.jpeg') }}" >
+{% endblock %}

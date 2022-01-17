@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Cash in
+{% endblock %}
+
+{% block body %}
+{% for el in money
+<h1>{{ el.id }}</h1>%}
+<p>Balance: {{ el.balace }} dollars</p>
+<p>Amount: {{ el.amount }} dollars</p>
+<p>Result: {{ el.balance +S el.amount }}</p>
+{% endfor %}
+{% endblock %}

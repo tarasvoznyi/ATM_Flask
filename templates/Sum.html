@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Cash in page
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+  <h1>Cash in</h1>
+  <form method="post">
+    <input type="text" name="balance" id="balance" class="form-control" placeholder="Your balance"><br>
+    <input type="text" name="amount" id="amount" class="form-control" placeholder="Enter amount of money"><br>
+    <input type="submit" class="btn btn-success"  value="Cash in">
+
+  </form>
+    </div>
+{% endblock %}

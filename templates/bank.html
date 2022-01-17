@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Balance page
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5" href="/Balance">
+  <h1>Enter your balance</h1>
+  <form method="post">
+    <input type="text" name="balance" id="balance" class="form-control" placeholder="Enter your balance"><br>
+ <input type="reset" class="btn btn-success" value="Continue">
+  </form>
+</div>
+{% endblock %}
